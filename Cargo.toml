@@ -1,0 +1,9 @@
+[package]
+name = "pomodoro-calculator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+leptos = { version = "0.6.11", features = ["csr", "nightly"] }
+time = "0.3.36"
