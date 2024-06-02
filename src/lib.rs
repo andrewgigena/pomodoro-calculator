@@ -51,10 +51,10 @@ pub fn calculate_pomodoros(
         } else {
             if loops != 0 && loops % config.pomodoros_until_long_break == 0 {
                 long_breaks += 1;
-                tmp_duration = short_break_duration;
+                tmp_duration = long_break_duration;
             } else {
                 short_breaks += 1;
-                tmp_duration = long_break_duration;
+                tmp_duration = short_break_duration;
             }
             loops += 1;
         }
